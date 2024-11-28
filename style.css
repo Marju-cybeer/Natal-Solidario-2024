@@ -1,0 +1,212 @@
+
+:root{
+    font-size: 62.5%; /*Modifica a fonte padrão 10px */
+    --color-base-text: #006400;
+    --color-base-white: #FFE4C4;
+    --color-base-red-300: #FF0000;
+    --color-base-gold-100: #FFD700;
+    --color-base-green-200:#228B22;
+}
+
+header{
+    background-color: var(--color-base-red-300);
+    color: var(--color-base-gold-100);
+    padding: 10px 20px;
+}
+header nav a {
+    color: var(--color-base-gold-100);
+    text-decoration: none;
+    margin: 0 15px;
+}
+.ms-3{
+    font-size: 5rem;
+}
+.doar{
+    font-size: 2rem;
+}
+.active{
+    font-size: 5rem;
+}
+header nav a:hover {
+    text-decoration: underline;
+}
+
+footer{
+    background-color: var(--color-base-red-300);
+    color: var(--color-base-gold-100);
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px 0;
+    min-height: 84px;
+}
+
+#newsletter{
+    background: var(--color-base-white);
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 2rem;
+}
+
+.img-carrosel{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.legenda{
+ background-color: rgba(0, 0 , 0 , 0.7);
+
+}
+.legenda h5{
+    font-size: 2.4rem;
+}
+
+.legenda p{
+    font-size: 2rem;
+}
+
+.legenda2{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.legenda2 h5{
+    font-size: 2.4rem;
+}
+.legenda2 p{
+    font-size: 2rem;
+}
+
+.legenda3{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.legenda3 h5{
+    font-size: 2.4rem;
+}
+.legenda3 p{
+    font-size: 2rem;
+}
+
+.card{
+    min-height: 200px;
+    box-shadow: 15px 10px 20px #a9a9a9;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--color-base-gold-100);
+}
+
+.botao{
+    background-color: #FF0000;
+    color: var(--color-base-white);
+    box-shadow: 15px 10px 20px #a9a9a9;
+    border-color: #FFE4C4;
+}
+
+.nav-link{
+    color: var(--color-base-gold-100) !important;
+    font-size: 1.4rem !important;
+}
+
+form {
+    background: var(--color-base-gold-100); 
+    box-shadow: 1px 0px 1.2px 0px #a9a9a9;
+    border-radius:3px;
+    /*max-width: 1000px;*/
+    margin: auto;
+    padding:2rem;
+    font-size: 2rem;
+    
+  }
+  
+  .coll-md-6 { 
+    position: relative;
+    margin-bottom:30px;
+  }
+  .form-control {
+    border: 3px solid #a9a9a9;
+    background: none;
+    padding: 0.8em;
+    color: black
+  }
+  input{
+    font-size: 1.875rem !important;
+  }
+  .textarea {
+    border: 3px solid #a9a9a9;
+    background: none;
+    resize: none;
+    padding: 0.8em;
+    font-size: 2rem;
+    color: black;
+    font-size: 2rem;
+  }
+  .form-label {
+    color: black;
+    pointer-events: none;
+   /* transform: translateY(1rem);*/
+    transition: 350ms;
+
+  }
+  .form-control:focus,
+  .form-control:valid {
+    outline: none;
+    --angle: 0deg;
+    border-bottom: 3px solid;
+    border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
+    animation: 3s rotate9234 linear infinite;
+  }
+  .textarea:focus,
+  textarea:valid {
+    outline: none;
+    --angle: 0deg;
+    border-bottom: 3px solid;
+    border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
+    animation: 3s rotate9234 linear infinite;
+  }
+    
+  @keyframes rotate9234 {
+    to {
+      --angle: 360deg;
+    }
+  }
+  @property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+  }
+  
+ 
+  .btn-custom {
+    background-color: #ffffff; /* Azul vibrante */
+    color: rgb(0, 0, 0); /* Cor do texto */
+    border-radius: 25px; /* Bordas arredondadas */
+    padding: 10px 20px; /* Padding para aumentar o tamanho do botão */
+    font-size: 2.4rem; /* Tamanho da fonte */
+    font-weight: bold; /* Deixar o texto em negrito */
+    transition: all 0.3s ease-in-out; /* Transição suave */
+    border: none; /* Remover borda */
+}
+
+/* Efeito de hover (quando o mouse passa sobre o botão) */
+.btn-custom:hover {
+    background-color: hsl(0, 0%, 100%); /* Cor do botão ao passar o mouse */
+    transform: translateY(-3px); /* Levantar o botão ao passar o mouse */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adicionar sombra */
+}
+
+/* Efeito para o botão "X" */
+.btn-danger.btn-custom {
+    background-color: #FF0000; /* Cor vermelha para o botão "X" */
+}
+
+.btn-danger.btn-custom:hover {
+    background-color: #c82333; /* Cor mais escura ao passar o mouse */
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
