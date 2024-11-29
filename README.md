@@ -20,5 +20,5 @@
  * Site Render 
  * Site Netlify
  * Aplicações de IA 
- * Utilização de Github
+ * Utilização de GitHub
  * Vercel 
