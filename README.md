@@ -16,7 +16,7 @@
  * Funções HTML
  * Funções Stylecss
 
- # Sites Usados
+ # Sites usados
  * Site Render 
  * Site Netlify
  * Aplicações de IA 
