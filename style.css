@@ -12,6 +12,7 @@ header{
     background-color: var(--color-base-red-300);
     color: var(--color-base-gold-100);
     padding: 10px 20px;
+    
 }
 header nav a {
     color: var(--color-base-gold-100);
@@ -19,7 +20,7 @@ header nav a {
     margin: 0 15px;
 }
 .ms-3{
-    font-size: 5rem;
+    font-size: 4rem;
 }
 .doar{
     font-size: 2rem;
@@ -101,13 +102,6 @@ footer{
     background-color: var(--color-base-gold-100);
 }
 
-.botao{
-    background-color: #FF0000;
-    color: var(--color-base-white);
-    box-shadow: 15px 10px 20px #a9a9a9;
-    border-color: #FFE4C4;
-}
-
 .nav-link{
     color: var(--color-base-gold-100) !important;
     font-size: 1.4rem !important;
@@ -181,7 +175,6 @@ form {
     inherits: false;
   }
   
- 
   .btn-custom {
     background-color: #ffffff; /* Azul vibrante */
     color: rgb(0, 0, 0); /* Cor do texto */
@@ -191,6 +184,7 @@ form {
     font-weight: bold; /* Deixar o texto em negrito */
     transition: all 0.3s ease-in-out; /* Transição suave */
     border: none; /* Remover borda */
+    
 }
 
 /* Efeito de hover (quando o mouse passa sobre o botão) */
