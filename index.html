@@ -155,53 +155,42 @@
                   </div>
               </div>
         </section>
-        <section id="newsletter" class="mt-5">
-            <h2 class="text-center">Ficou com dúvidas</h2>
-            <p class="text-center">Nossa equipe aguarda a sua pergunta.</p>
-            <form action="#" class="row g-3">
-                <div class = "col-md-6">
-                    <label class="form-label"  
-                    for="nome">Nome completo</label>
-                    <input class="form-control"
-                    type="text" id="nome" name="nome" placeholder="Seu nome" required>
-                </div>
-                <div class = "col-md-6">
-                    <label class="form-label" 
-                     for="email">e-mail</label>
-                    <input class="form-control"
-                    type="email" name="email" id="email" placeholder="seue-mail@exemplo.com" required> 
-                </div>
-                <div class = "col-md-6">
-                    <label class="form-label" 
-                    for="telefone">Telefone</label>
-                    <input class="form-control"
-                    type="tel" name="telefone" id="telefone" placeholder="(XX) XXXXX - XXXX"required >
-                </div>
-                <div class = "col-md-6">
-                  <label class="form-label" 
-                  for="interesse" >Dúvidas frequentes</label>
-                  <select class="form-select"
-                   name="interesse" id="interesse">
-                   <option value=""></option>
-                      <option value="quem">Quem pode doar?</option>
-                      <option value="quanto">Quanto posso doar?</option>
-                      <option value="brinquedos">Só posso doar brinquedos?</option>
-                  </select>
-              </div>
-                    <div class="mb-3">
-  <label for="textarea" class="form-label">Registre sua dúvida.</label>
-  <textarea class="form-control" name="conteudo" id="conteudo" rows="3" required></textarea>
-</div>
-<div class="col-12 text-center">
-  <button id="send" type="button" class="botao bnt" >
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
-      <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
-    </svg> Enviar
-  </button>
-</div>
-                </div>
-            </form>
-        </section>
+        <div class="fundo">
+        <div class="container2">
+        <h1 id="cor">🎄Ficou com dúvidas?🎄</h1>
+        <h1 class="equipe"> Nossa equipe aguarda a sua pergunta </h1>
+        <form action="#" method="post"> 
+            <div class="form-group">
+                <label for="nome" >Seu nome:🎄</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email" >Seu e-mail:🎄</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="numero">Número de telefone:🎄</label>
+                <input type="tel" id="telefone" name="tel" required>
+            </div>
+            <div class="form-group">
+                <label for="duvidas">Dúvidas frequentes:🎄</label>
+                <input type="text" id="conteudo" name="text" required>
+                    <select id="selecionar">
+                        <option value="">Dúvidas</option> 
+                        <option value="ondedoar">Onde Doar</option>
+                        <option value="lugarproximo">Lugares mais próximos</option>                  
+                        <option value="endereço">Endereços</option>        
+                        <option value="sópossodoar">Só posso doar brinquedo</option>           
+                    </select>
+                  </div>
+            <button id="send" type="button" class="botao bnt" >
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
+              </svg> Enviar 🎅
+            </button>
+        </form>
+    </div>
+  </div>
         <br>
         
     </main>
@@ -220,3 +209,4 @@ crossorigin="anonymous"></script>
 <script src="./formulario.js"></script>
 </body>
 </html>
+<!--  site criado por Marta, Alan e Anthony  -->
