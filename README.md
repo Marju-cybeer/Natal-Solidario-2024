@@ -6,9 +6,9 @@
 
  # Sistemas básicos
 
- * utilização de classes 
+ * Utilização de classes 
  * Formulários
- * slides 
+ * Slides 
  * Carousel
 
  # Programas usados 
@@ -20,5 +20,5 @@
  * Site Render 
  * Site Netlify
  * Aplicações de IA 
- * utilização de Github
+ * Utilização de Github
  * Vercel 
