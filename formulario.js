@@ -5,7 +5,7 @@ function adicionarDuvidas(){
     const nome = document.getElementById("nome").value;
 const email = document.getElementById("email").value;
 const telefone = document.getElementById("telefone").value;
-const duvidas = document.getElementById("interesse").value;
+const duvidas = document.getElementById("selecionar").value;
 const conteudo = document.getElementById("conteudo").value;
 
    if(!nome || !email || !telefone || !duvidas || !conteudo){
@@ -22,3 +22,4 @@ const conteudo = document.getElementById("conteudo").value;
     document.querySelector("form").reset();
 }
 
+/*  site criado por Marta, Alan e Anthony  */

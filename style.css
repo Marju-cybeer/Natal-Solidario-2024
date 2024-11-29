@@ -1,6 +1,6 @@
 
 :root{
-    font-size: 62.5%; /*Modifica a fonte padrão 10px */
+    font-size: 62.5%; 
     --color-base-text: #006400;
     --color-base-white: #FFE4C4;
     --color-base-red-300: #FF0000;
@@ -100,14 +100,6 @@ footer{
     text-align: center;
     background-color: var(--color-base-gold-100);
 }
-
-.botao{
-    background-color: #FF0000;
-    color: var(--color-base-white);
-    box-shadow: 15px 10px 20px #a9a9a9;
-    border-color: #FFE4C4;
-}
-
 .nav-link{
     color: var(--color-base-gold-100) !important;
     font-size: 1.4rem !important;
@@ -117,11 +109,13 @@ form {
     background: var(--color-base-gold-100); 
     box-shadow: 1px 0px 1.2px 0px #a9a9a9;
     border-radius:3px;
-    /*max-width: 1000px;*/
+    max-width: 800px;
     margin: auto;
     padding:2rem;
     font-size: 2rem;
-    
+    background-image: url(./assest/luzinha3.gif);
+    background-size: 100% 100%;
+    box-shadow: 5px 1px 10px black
   }
   
   .coll-md-6 { 
@@ -149,7 +143,6 @@ form {
   .form-label {
     color: black;
     pointer-events: none;
-   /* transform: translateY(1rem);*/
     transition: 350ms;
 
   }
@@ -182,31 +175,236 @@ form {
   }
   
  
-  .btn-custom {
-    background-color: #ffffff; /* Azul vibrante */
-    color: rgb(0, 0, 0); /* Cor do texto */
-    border-radius: 25px; /* Bordas arredondadas */
-    padding: 10px 20px; /* Padding para aumentar o tamanho do botão */
-    font-size: 2.4rem; /* Tamanho da fonte */
-    font-weight: bold; /* Deixar o texto em negrito */
-    transition: all 0.3s ease-in-out; /* Transição suave */
-    border: none; /* Remover borda */
+  
+.btn-custom {
+    background-color: #ffffff; 
+    color: rgb(0, 0, 0); 
+    border-radius: 25px; 
+    padding: 10px 20px; 
+    font-size: 2.4rem; 
+    font-weight: bold; 
+    transition: all 0.3s ease-in-out; 
+    border: none; 
+    display: inline-block; 
+    text-align: center;
 }
 
-/* Efeito de hover (quando o mouse passa sobre o botão) */
+
 .btn-custom:hover {
-    background-color: hsl(0, 0%, 100%); /* Cor do botão ao passar o mouse */
-    transform: translateY(-3px); /* Levantar o botão ao passar o mouse */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adicionar sombra */
+    background-color: hsl(0, 0%, 100%); 
+    transform: translateY(-3px); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
 }
 
-/* Efeito para o botão "X" */
+
 .btn-danger.btn-custom {
-    background-color: #FF0000; /* Cor vermelha para o botão "X" */
+    background-color: #FF0000; 
 }
 
 .btn-danger.btn-custom:hover {
-    background-color: #c82333; /* Cor mais escura ao passar o mouse */
+    background-color: #c82333; 
     transform: translateY(-3px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
+
+@media (max-width: 768px) {
+    .btn-custom {
+        font-size: 1.8rem; 
+        padding: 12px 25px; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    .btn-custom {
+        font-size: 1.4rem; 
+        padding: 10px 15px; 
+        width: 100%; 
+    }
+}
+.form-group {
+    margin-bottom: 15px;
+    font-size: 10px;
+}
+
+label {
+    font-size: 3.1rem;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    resize: vertical;
+    height: 150px;
+}
+button {
+    padding: 15px;
+    font-size: 1.2rem;
+    background-color: #ff5c5c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-shadow: 1px 1px 1px black;
+}
+
+button:hover {
+    background-color: #ff3333;
+}
+
+option {
+    font-size: 3rem;
+}
+h1::before {
+    content: '🎄';
+    margin-right: 10px;
+}
+
+h1::after {
+    content: '🎄';
+    margin-left: 10px;
+}
+input:required, textarea:required {
+    border: 2px solid #b30000;
+}
+
+#cor {
+    color:#ff0000;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+    font-size: 50px;
+}
+
+.equipe {
+    color:#ff0000;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+    font-size: 30px;
+}
+#selecionar {
+    appearance: none; 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    width: 100%;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+#selecionar:focus {
+    border-color: #ff0000;
+    box-shadow: 0 0 8px rgba(108, 99, 255, 0.3);
+}
+#selecionar option {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+}
+#selecionar option:checked {
+    background-color: #ff0000;
+    color: white;
+}
+#selecionar::after {
+    content: '▼';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #333;
+}
+.select-container {
+    position: relative;
+    display: inline-block;
+}
+.send {
+    align-items: center;
+    display: flex;
+}
+.fundo {
+    background-color: #FFE4C4;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 2rem;
+    margin-left: 200px;
+    margin-right: 200px;
+    box-shadow: 1px 1px 5px black;
+}
+@media (max-width: 768px) {
+    .fundo {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 1.6rem;
+    }
+    
+    label {
+        font-size: 2.5rem;
+    }
+    
+    button {
+        font-size: 1.1rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .equipe {
+        font-size: 2rem;
+    }
+
+    #cor {
+        font-size: 40px;
+    }
+}
+@media (max-width: 480px) {
+    .fundo {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 1.4rem;
+    }
+
+    label {
+        font-size: 2rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .equipe {
+        font-size: 1.8rem;
+    }
+
+    #cor {
+        font-size: 30px;
+    }
+
+    input, textarea, #selecionar {
+        font-size: 1rem;
+    }
+}
+
+
+/*  site criado por Marta, Alan e Anthony  */
